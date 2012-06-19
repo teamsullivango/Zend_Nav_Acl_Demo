@@ -1,0 +1,27 @@
+<?php 
+echo '<?xml version="1.0" encoding="UTF-8" ?>';
+echo $this->doctype()
+?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<?php 
+echo $this->headTitle();
+echo $this->headScript();
+echo $this->headLink();
+$this->setNavRole();
+$this->layout()->userForm = $this->action('index','user');
+?></head>
+<body>
+<div class="header">
+	<div class="topnav">
+		<?php 
+			echo $this->navigation()->menu();
+		?>
+		</div>	
+</div>
+<div id="pageWrapper">
+	<div id="main"><?php echo $this->layout()->content;?></div>
+</div>
+</body>
+</html>

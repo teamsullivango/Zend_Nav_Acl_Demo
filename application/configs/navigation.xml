@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+	<nav>
+		<administration>
+			<label>Administration</label>
+			<uri>/</uri>
+			<resource>user</resource>
+			<pages>
+				<page_user_create>
+					<label>Create New User</label>
+					<uri>/user/create</uri>
+					<resource>user</resource>
+				</page_user_create>
+				<page_user_list>
+					<label>List Users</label>
+					<uri>/user/list</uri>
+					<resource>user</resource>
+				</page_user_list>
+			</pages>
+		</administration>
+		<home>
+			<label>Home</label>
+			<uri>/</uri>			
+			<pages>
+				<about>
+					<label>About</label>
+					<uri>index/about</uri>				
+				</about>
+				<contact>
+					<label>Contact</label>
+					<uri>index/contact</uri>
+				</contact>
+			</pages>					
+		</home>
+		<docs>
+			<label>Docs</label>
+			<uri>/docs/</uri>
+			<resource>docs</resource>
+			<pages>
+				<page_docs>
+					<label>Member Only Docs</label>
+					<uri>/docs/index</uri>
+					<resource>docs</resource>
+				</page_docs>
+			</pages>
+		</docs>
+	</nav>
+</configuration>
