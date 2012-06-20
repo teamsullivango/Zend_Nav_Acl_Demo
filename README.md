@@ -3,6 +3,21 @@ Zend_Nav_Acl_Demo
 
 A working demonstration of integrating Zend_Acl rules upon Zend_Navigation presentation.
 
+Database
+========
+
+create table users (
+
+  user_id not null auto_increment primary key,
+  
+  firstname varchar(35),
+  
+  middlename varchar(50),
+  
+  lastnamevarchar(50) default 'bato'
+  
+);
+
 +----------------+--------------+------+-----+---------+----------------+
 | Field          | Type         | Null | Key | Default | Extra          |
 +----------------+--------------+------+-----+---------+----------------+
