@@ -10,24 +10,19 @@ create table users (
 
   user_id not null auto_increment primary key,
   
-  firstname varchar(35),
+  username varchar(50),
   
-  middlename varchar(50),
+  email text,
   
-  lastnamevarchar(50) default 'bato'
+  password varchar(250),
   
+  salt varchar(8),
+  
+  first_name varchar(50),
+  
+  last_name varchar(50),
+  
+  role varchar(25),
+  
+  reset_password tinyint(1)  
 );
-
-+----------------+--------------+------+-----+---------+----------------+
-| Field          | Type         | Null | Key | Default | Extra          |
-+----------------+--------------+------+-----+---------+----------------+
-| user_id        | int(11)      | NO   | PRI | NULL    | auto_increment |
-| username       | varchar(50)  | YES  |     | NULL    |                |
-| email          | text         | NO   |     | NULL    |                |
-| password       | varchar(250) | YES  |     | NULL    |                |
-| salt           | varchar(8)   | NO   |     | NULL    |                |
-| first_name     | varchar(50)  | YES  |     | NULL    |                |
-| last_name      | varchar(50)  | YES  |     | NULL    |                |
-| role           | varchar(25)  | YES  |     | NULL    |                |
-| reset_password | tinyint(1)   | NO   |     | 1       |                |
-+----------------+--------------+------+-----+---------+----------------+
